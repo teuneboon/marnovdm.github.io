@@ -1,0 +1,22 @@
+
+<html>
+<head>
+<title>BAM!</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.zonnegrotevuurbaljonguh.nl/jquery.color-2.1.2.min.js"></script>
+<script type="text/javascript">
+$(function() {
+        i = 0;
+        setInterval(function() {
+                var color1 = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+                var color2 = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+                $('#title').animate({'color': color1}, 16);
+                $('#body').animate({'backgroundColor': color2}, 16);
+        }, 16);
+});
+</script>
+</head>
+<body style="background-color: #FFFF55" id="body">
+	<center><h1 id="title" style="font-size: 300px; color: red;" contenteditable="true">Marno's Page</h1></center>
+</body>
+</html>
